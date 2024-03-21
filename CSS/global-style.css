@@ -1,8 +1,37 @@
 body{
     margin:0;
+    font-family: Verdana, Tahoma, sans-serif;
+    background-color: rgba(120, 99, 42, 0.177);
+}
+
+.main{
+    padding: 0 3em
+}
+header{
+    font-family: Audiowide;
+    margin:0;
+    padding:0;
+    align-items: center;
+    height: fit-content;
+    display:flex;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(to right, rgba(17, 76, 226, 0.05), rgb(52, 77, 139));
+}
+header h1{
+    display: inline-block;
+    text-align: center;
+}
+header img{
+    height:92px;
+    width: 92px;
+    margin: 1em;
+    object-fit: contain;
+    
+
 }
 nav.topnav{
-    background-color: aquamarine;
+    background-color: rgb(145, 114, 195);
     margin:0;
     padding:10px 10px 10px 0;
     
