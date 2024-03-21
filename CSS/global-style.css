@@ -1,0 +1,33 @@
+body{
+    margin:0;
+}
+nav.topnav{
+    background-color: aquamarine;
+    margin:0;
+    padding:10px 10px 10px 0;
+    
+}
+
+nav.topnav a{
+    padding: 10px 10px;
+    margin:0;
+    text-decoration: none;
+    color: black;
+    
+}
+
+nav.topnav a:hover{
+    background-color:rgb(133, 255, 127)
+}
+
+@media only screen and (max-width: 768px){
+    nav.topnav{
+        justify-content: center;
+        padding:0;
+    }
+    nav.topnav a{
+        padding: 10px 0 10px;
+        display: block;
+        text-align: center;
+    }
+}
