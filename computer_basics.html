@@ -6,6 +6,7 @@
     <title>Landing Page</title>
     <link rel="icon" type="image/x-icon" href="/images/space_raccoon1.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="CSS/global-style.css" rel="stylesheet"/>
     <link href="CSS/computer-basics-style.css" rel="stylesheet"/>
 </head>
@@ -20,79 +21,163 @@
         <a href="computer_basics.html">Computer Basics</a>
         <a href="#">Link</a>
     </nav>
+
     <div class="main">
     <h1>Computer Notes</h1>
-    <h4>Page Created: 3/21/24  Updated: 3/21/24</h4>
+    <h4>Page Created: 3/21/24  Updated: 3/22/24</h4>
     <p>should eventually be better divided but this is just a start</p>
     <p>Sources: Class, ArmEducationXX MP101, Computer Organization and Design MIPS Edition: The Hardware Software Interfaces by David A Patterson and John Hennessy</p>
+    
     <div class = "grid-container computer">
         
         <h2>Parts of a Computer</h2>
-        <div class="computer card">
-            <h3>Memory</h3>
-            <span style="text-align: center;">Store temporary data.</span> 
-            <article>
-                The CPU uses memory to store the data for the current processes. Memory must be fast and easily accessed. 
-                <br>If you run ots of applications at once ypu need lots of <em>Memory</em>
+
+        <div class="card">
+            <hgroup>
+                <h3>Memory</h3>
+                <p>Store temporary data.</p> 
+            </hgroup>
+            
+            <ul class = "content">
+                <li class="definition">Used by CPU to store the data for the current processes.</li>
+                <li>Must be fast and easily accessed by CPU.</li>
+                <li>Accessed via <i>Memory Bus</i></li>
+                <li>Sometimes called "Primary Storage" or "Main Memory"</li>
+                <li>If running lots of applications at once you need lots of <em>Memory</em></li>
+            </ul>
+            
+            <div class="examples">
+                <h4>Common Forms of Memory:</h4>
                 <ul>
-                    Common Forms of Memory:
                     <li>ROM</li>
                     <li>RAM</li>
                     <li>Registers</li>
                 </ul>
-            </article>
-            
+            </div>
         </div>
-        <div class="computer card">
-            <h3>Storage</h3>
-            <span style="text-align: center;">Long Term File Storage</span> 
-            <article>Storage is where you keep files and save them for an extended period of time. 
-                <br>If you have lots of applications, videos, or other big files you need lots of <em>Storage</em>
-                <br>Additional storage is often easy to obtain and expand
-                <ul>Common Types of Storage
+
+        <div class="card">
+            <hgroup>
+                <h3>Storage</h3>
+                <p>Long term file storage</p> 
+            </hgroup>
+            
+            <ul class = "content">
+                <li class = "definition">Keep files for extended periods of time</li>
+                <li>Not directly connected to CPU</li>
+                <li>Often accessed via I/O channels (ex: USB port)</li>
+                <li>Often cheap, easy to obtain, and easy to expand</li>
+                <li>If you have lots of applications, videos, or other big files you need lots of <em>Storage</em></li>
+            </ul>
+            
+            <div class="examples">
+                <h4>Common Forms of Storage:</h4>
+                <ul>
                     <li>Hard Disk Drive (HDD)</li>
                     <li>Solid State Drive (SSD)</li>
                     <li>Compact Disk (CD)</li>
                     <li>USB Drives</li>
                 </ul>
-            </article>
-            
+            </div>
         </div>
-        <div class="computer card">
-            
+
+        <div class="card">
+            <hgroup>
                 <h3>Central Processing Unit</h3>
-            <span style="text-align: center;">Runs programs and processes data. The brains of the computer.</span> 
-            <article>
-                If data is collected it fetches data from input devices and stores the result or sends it to output.  
-                <br>It's internal clock synchs the system.
-                <br>Made up of multiple cores which can run in parallel.
-                <br>
-                <ul>3 Main Parts
+                <p>The brains of the computer.</p> 
+            </hgroup>
+            
+            <ul class = "content">
+                <li class = "definition">Interpret Programs, Process Data</li>
+                <li>Contains <i>Internal Clock</i> to synch the system</li>
+                <li>Fetches data from input devices</li>
+                <li>Sends proccess result to output or storage.</li>
+                <li>Contains multiple cores which can run in parallel</li>
+            </ul>
+            
+            <div class="examples">
+                <h4>3 Components of CPU:</h4>
+                <ul>
                     <li>Control Unit</li>
                     <li>Arithmetic and Logic Unit</li>
-                    <li>registers</li>
+                    <li>Registers</li>
                 </ul>
-            </article>
+            </div>
         </div>
-        <div class="computer card">
-            <h3>Input/Output</h3>
-            <span style="text-align: center;">Peripherals and Data</span> 
-            <article>Data is often inputted via Universal Serial Bus (USB). 
-                <br>Data outputted by the CPU may be printed, sent to another process, etc.</article>
-                <ul>Common I/O Devices
+
+        <div class="card">
+            <hgroup>
+                <h3>Input/Output</h3>
+                <p>Peripherals and interface</p> 
+            </hgroup>
+            
+            <ul class = "content">
+                <li class = "definition">Collects or displays data</li>
+                <li>Often connected via Universial Serial Bus (USB)</li>
+                <li>Data sent in or out of the CPU</li>
+                
+                <li>Sends proccess result to output or storage.</li>
+                <li>Contains multiple cores which can run in parallel</li>
+            </ul>
+            
+            <div class="examples">
+                <h4>Common I/O devices:</h4>
+                <ul>
                     <li>Keyboard</li>
-                    <li>Mouse</li>
+                    <li>Sensor</li>
                     <li>Display Screen</li>
-                    <li>Speakers</li>
+                    <li>Another processes</li>
                 </ul>
+            </div>
         </div>
     </div>
     
     <div>
-        <h2>Parts of CPU</h2>
-    </div>
-
-    <div>
+        <div class = "grid-container CPU">
+        
+            <h2>CPU Components</h2>
+    
+            <div class="card">
+                <hgroup>
+                    <h3>Control Unit</h3>
+                    <p>Processes instructions</p> 
+                </hgroup>
+                
+                <ul class = "content">
+                    <li class="definition"></li>
+                    <li>Sends control signals to other parts of the computer system</li>
+                    <li>Decodes instructions</li>
+                    <li>Applies instructions</li>
+                    
+                </ul>
+                
+                
+            </div>
+            <div class="card">
+                <hgroup>
+                    <h3>Arithmetic and Logic Unit</h3>
+                    <p>Carries Out instructions</p> 
+                </hgroup>
+                
+                <ul class = "content">
+                    <li class="definition"></li>
+                    <li>Completes tasks requested by Control Unit</li>
+                    <li>Uses circuits to complete operations</li>
+                </ul>
+            </div>
+            <div class="card">
+                <hgroup>
+                    <h3>Registers</h3>
+                    <p>Small Fast Memory Units</p> 
+                </hgroup>
+                
+                <ul class = "content">
+                    <li class="definition"></li>
+                    <li>Volitile</li>
+                    <li>General Purpose and Special Purpose</li>
+                </ul>
+            </div>
+        </div>
         <h2>Memory</h2>
     </div>
 
